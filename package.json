@@ -2,11 +2,11 @@
   "name": "ravelang-extension",
   "displayName": "Rave Language Extension",
   "description": "The highlight for Rave Programming Language.",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "publisher": "ttimofeyka",
   "repository": {
-      "type": "git",
-      "url": "https://github.com/Ttimofeyka/ravelang-extension.git"
+    "type": "git",
+    "url": "https://github.com/Ttimofeyka/ravelang-extension.git"
   },
   "engines": {
     "vscode": "^1.84.0"
@@ -15,17 +15,26 @@
     "Programming Languages"
   ],
   "contributes": {
-    "languages": [{
-      "id": "rave",
-      "aliases": ["Rave", "rave"],
-      "extensions": [".rave"],
-      "configuration": "./language-configuration.json"
-    }],
-    "grammars": [{
-      "language": "rave",
-      "scopeName": "source.rave",
-      "path": "./syntaxes/rave.tmLanguage.json"
-    }],
+    "languages": [
+      {
+        "id": "rave",
+        "aliases": [
+          "Rave",
+          "rave"
+        ],
+        "extensions": [
+          ".rave"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "rave",
+        "scopeName": "source.rave",
+        "path": "./syntaxes/rave.tmLanguage.json"
+      }
+    ],
     "snippets": [
       {
         "language": "rave",
