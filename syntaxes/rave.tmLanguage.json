@@ -24,7 +24,7 @@
 			},
 			{
 				"name": "entity.name.type",
-				"match": "\\b(struct|namespace)\\b"
+				"match": "\\b(true|false|struct|namespace)\\b"
 			},
 			{
 				"name": "variable.name",
