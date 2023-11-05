@@ -1,0 +1,87 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Rave",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#strings"
+		},
+		{
+			"include": "#chars"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [{
+				"name": "keyword.control.rave",
+				"match": "\\b(extern|import|break|continue|if|else|cast|while|for|return)\\b"
+			},
+			{
+				"name": "storage.type",
+				"match": "\\b(alias|void|bool|char|uchar|short|ushort|int|uint|long|ulong|cent|ucent|float|double)\\b"
+			},
+			{
+				"name": "entity.name.type",
+				"match": "\\b(struct|namespace)\\b"
+			},
+			{
+				"name": "variable.name",
+				"match": "([-a-zA-Z$._][-a-zA-Z$._0-9]*)"
+			},
+			{
+				"name": "keyword.other",
+				"match": "([%@][-a-zA-Z$._][-a-zA-Z$._0-9]*)"
+			},
+			{
+				"name": "comment.line.double-slash.rave",
+				"match": "(//).*",
+				"captures": {
+					"1": {
+						"name": "punctuation.definition.comment.rave"
+					}
+				}
+			},
+			{
+				"name": "comment.block.rave",
+				"begin": "/\\*",
+				"end": "\\*/",
+				"beginCaptures": {
+					"0": {
+						"name": "punctuation.definition.comment.rave"
+					}
+				},
+				"endCaptures": {
+					"0": {
+						"name": "punctuation.definition.comment.rave"
+					}
+				}
+			}
+			]
+		},
+		"strings": {
+			"name": "string.quoted.double.rave",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.rave",
+					"match": "\\\\."
+				}
+			]
+		},
+		"chars": {
+			"name": "string.quoted.single.rave",
+			"begin": "'",
+			"end": "'",
+			"patterns": [
+				{
+					"name": "constant.character.escape.rave",
+					"match": "\\\\."
+				}
+			]
+		}
+	},
+	"scopeName": "source.rave"
+}

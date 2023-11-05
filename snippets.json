@@ -1,0 +1,26 @@
+{
+	"if": {
+		"prefix": "if",
+		"body": "if() {}",
+		"description": "if",
+		"scope": "source.rave"
+	},
+    "while": {
+		"prefix": "while",
+		"body": "while() {}",
+		"description": "while",
+		"scope": "source.rave"
+	},
+    "for": {
+        "prefix": "for",
+        "body": "for() {}",
+        "description": "for",
+        "scope": "source.rave"
+    },
+    "namespace": {
+        "prefix": "namespace",
+        "body": "namespace {}",
+        "description": "namespace",
+        "scope": "source.rave"
+    }
+}
