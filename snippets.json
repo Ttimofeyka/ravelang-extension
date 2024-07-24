@@ -17,6 +17,12 @@
         "description": "for",
         "scope": "source.rave"
     },
+    "foreach": {
+        "prefix": "foreach",
+        "body": "foreach(element; array) {}",
+        "description": "foreach",
+        "scope": "source.rave"
+    },
     "namespace": {
         "prefix": "namespace",
         "body": "namespace {}",
