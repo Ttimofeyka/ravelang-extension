@@ -16,7 +16,7 @@
 		"keywords": {
 			"patterns": [{
 				"name": "keyword.control.rave",
-				"match": "\\b(extern|import|break|continue|if|else|foreach|switch|case|cast|while|for|return|defer)\\b"
+				"match": "\\b(extern|import|break|continue|if|else|likely|unlikely|foreach|switch|case|cast|while|for|return|defer)\\b"
 			},
 			{
 				"name": "storage.type",
