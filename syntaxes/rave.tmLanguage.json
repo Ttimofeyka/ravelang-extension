@@ -20,7 +20,7 @@
 			},
 			{
 				"name": "storage.type",
-				"match": "\\b(const|alias|void|bool|char|uchar|short|ushort|int|uint|long|ulong|cent|ucent|float|double|auto|half|bhalf|real|short8|int4|float4|int8|float8|float2|double2)\\b"
+				"match": "\\b(const|alias|usize|void|bool|char|uchar|short|ushort|int|uint|long|ulong|cent|ucent|float|double|auto|half|bhalf|real|short8|int4|int8|float2|float4|float8|double2|double4)\\b"
 			},
 			{
 				"name": "entity.name.type",

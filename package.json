@@ -2,7 +2,7 @@
   "name": "ravelang-extension",
   "displayName": "Rave Language Extension",
   "description": "The highlight for Rave Programming Language.",
-  "version": "1.4.6",
+  "version": "1.4.7",
   "publisher": "ttimofeyka",
   "repository": {
     "type": "git",
